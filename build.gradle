@@ -1,10 +1,23 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin'
+
+}
+javafx {
+    version = "17.0.0.1"
+    modules = [ 'javafx.controls' ]
+}
+
+task prepareKotlinBuildScriptModel {
+
 }
 
 group = 'com.kodilla'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+mainClassName = 'com.kodilla.tictactoe.TicTacToe'
+//mainClassName = 'com.kodilla.blackjack.BlackJack'
 
 repositories {
     mavenCentral()
